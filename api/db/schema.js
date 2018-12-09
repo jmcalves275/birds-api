@@ -1,9 +1,10 @@
+
 const config = require('../configurations/config');
 
 var knex = require('knex')({
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
+    host : config.DATABASE.HOST,
     user : config.DATABASE.USER,
     password : config.DATABASE.PASSWORD,
     database : config.DATABASE.DB
