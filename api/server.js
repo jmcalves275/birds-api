@@ -9,8 +9,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(logger("dev"));
 
-
 const usersRouter = require('./services/users/routes')(app);
+
 
 var knex = require('knex')({
   client: 'pg',
@@ -21,10 +21,6 @@ var knex = require('knex')({
     database : config.DATABASE.DB
   }
 });
-
-// (optional) only made for logging and
-// bodyParser, parses the request body to be a readable json format
-
 
 
 // launch our backend into a port
