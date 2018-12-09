@@ -3,7 +3,6 @@ const { validationResult } = require('express-validator/check');
 const users = []
 
 function getUser(req, res) {
-
   res.status(200);
   res.send(users);
 }
