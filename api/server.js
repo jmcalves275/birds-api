@@ -22,6 +22,5 @@ var knex = require('knex')({
   }
 });
 
-
 // launch our backend into a port
 app.listen(config.APP.PORT, () => console.log(`LISTENING ON PORT ${config.APP.PORT}`));

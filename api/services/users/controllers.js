@@ -1,5 +1,4 @@
-const data = ('./data.json')
-const { check, validationResult } = require('express-validator/check');
+const { validationResult } = require('express-validator/check');
 
 const users = []
 
